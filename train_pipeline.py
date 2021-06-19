@@ -5,13 +5,17 @@ from __future__ import print_function
 import time
 
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import eval_functions
 import data_input
 import architecture
 
-flags = tf.app.flags
+#flags = tf.app.flags
+
+flags = tf.compat.v1.flags
+
 FLAGS = flags.FLAGS
 flags.DEFINE_float('learning_rate', 0.001, 'Initial learning rate.')
 flags.DEFINE_integer('max_steps', 20, 'Number of steps to run trainer.')

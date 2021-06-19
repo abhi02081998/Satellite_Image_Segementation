@@ -25,7 +25,7 @@ import cv2
 from imageflow import convert_images
 #-------------------------------------------------
 
-print "Locating dataset..."
+print ("Locating dataset...")
 #Read images into arrays
 #Sat images = Input data
 
